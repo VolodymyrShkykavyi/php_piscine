@@ -4,15 +4,16 @@ html, body {
 }
 
 header {
-    margin: 20px 40px;
+    margin: 18px auto;
+    max-width: 1420px;
+    position: relative;
 }
 
 #loupe {
-    height: 180px;
-    max-height: 450px;
-    right: 15px;
-    bottom: -45px;
-    position: absolute
+    max-height: 300px;
+    right: 29px;
+    bottom: -28px;
+    position: absolute;
 }
 
 #wall {
@@ -21,14 +22,26 @@ header {
     height: 50px;
 }
 
+#img_reload {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+#img_close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 2px;
+}
+
 .round {
     border-radius: 10px;
-    border: 1px solid #909090;
     background-color: #909090;
 }
 
 .shadow {
-    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.7);
+    box-shadow: 9px 9px 15px black;
 }
 .container {
     margin: 0 10%;
@@ -40,20 +53,17 @@ header {
 }
 
 .content {
-
-    width: 100%;
+    margin: 20px auto 0 auto;
+    width: 1350px;
     text-align: center;
-    position: relative;
 }
 
 .left_panel {
-    display: inline-block;
-    position: absolute;
+    width: 140px;
 }
 
 .right_panel {
     display: inline-block;
-    position: absolute;
 }
 
 .central_panel
@@ -66,9 +76,9 @@ header {
     height: 60px;
 }
 .site_name img{
-    max-width: 500px;
-    max-height: 120px;
+    max-height: 110px;
     display: inline-block;
+    margin: 5px 0 8px 10px;
 }
 
 .right_panel img {
