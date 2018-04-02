@@ -4,7 +4,7 @@ html, body {
 }
 
 header {
-    margin: 18px auto;
+    margin: 16px auto;
     max-width: 1420px;
     position: relative;
 }
@@ -18,8 +18,8 @@ header {
 
 #wall {
     background-image: url("resources/brick.jpg");
-    width: 70px;
-    height: 50px;
+    width: 120px;
+    height: 70px;
 }
 
 #img_reload {
@@ -35,10 +35,17 @@ header {
     bottom: 2px;
 }
 
+#funny_block {
+    height: 170px;
+    width: 520px;
+    padding: 10px;
+}
+
 .round {
     border-radius: 10px;
     background-color: #909090;
 }
+
 
 .shadow {
     box-shadow: 9px 9px 15px black;
@@ -54,21 +61,29 @@ header {
 
 .content {
     margin: 20px auto 0 auto;
-    width: 1350px;
+    width: 1365px;
     text-align: center;
 }
 
 .left_panel {
     width: 140px;
+    height: 425px;
+    padding: 10px;
 }
 
 .right_panel {
-    display: inline-block;
+    width: 140px;
+    height: 425px;
+    padding: 10px;
 }
 
 .central_panel
 {
     display: inline-block;
+    margin: 0 30px;
+    padding: 10px;
+    height: 582px;
+    width: 1020px;
 }
 
 .left_panel img {
