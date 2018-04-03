@@ -35,6 +35,12 @@ header {
     bottom: 2px;
 }
 
+#img_eye {
+    margin: -5px 0 1px -5px;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
 #funny_block {
     height: 170px;
     width: 520px;
@@ -61,7 +67,7 @@ header {
 
 .content {
     margin: 20px auto 0 auto;
-    width: 1365px;
+    width: 1420px;
     text-align: center;
 }
 
@@ -87,8 +93,8 @@ header {
 }
 
 .left_panel img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 .site_name img{
     max-height: 110px;
@@ -97,8 +103,8 @@ header {
 }
 
 .right_panel img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .left {
@@ -109,3 +115,31 @@ header {
     float: right;
 }
 
+
+.strange_form {
+    width: 500px;
+    height: 150px;
+    top: 650px;
+    position: absolute;
+    padding: 10px;
+    font: 16px arial, serif;
+    background-color: #88ff89;
+}
+
+.text_field{
+    width: 376px;
+    height: 15px;
+    margin: 0 0 0 2px;
+    border: 2px solid #9d969d;
+
+}
+
+.btn_submit {
+    height: 22px;
+    margin: 0 0 0 4px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+    border: 1px solid #a8a4a5;
+    border-radius: 1px;
+}
