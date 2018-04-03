@@ -1,0 +1,88 @@
+                      html, body, .container {
+                          min-height: 100%;
+                          text-align: center;
+                      }
+
+body {
+    background: linear-gradient(#f0f0f0, #a9a9a9);
+
+}
+
+td {
+    width: 50px;
+    padding: 5px;
+}
+
+table {
+    margin: -250px auto 0;
+    z-index: 2;
+}
+
+table h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+}
+
+.element {
+    border: 1px solid black;
+}
+
+.el_number {
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+.el_weight {
+    text-align: right;
+    font-size: 12px;
+    margin: 0;
+}
+
+.purple {
+    background-color: #AB91FF;
+}
+
+.lightorange {
+    background-color: #FFC591;
+}
+
+.creambrulee {
+    background-color: #FFDF91;
+}
+
+.jonquil {
+    background-color: #ECFF91;
+}
+
+.reef {
+    background-color: #D2FF91;
+}
+
+.lightgreen {
+    background-color: #B8FF91;
+}
+
+.witchhaze {
+    background-color: #FFF991;
+}
+
+.mintgreen {
+    background-color: #92FF9F;
+}
+
+.heliotrope {
+    background-color: #F991FF;
+}
+
+.anakiwa {
+    background-color: #91DFFF;
+}
+
+.silver {
+    background-color: #C8C8C8;
+}
