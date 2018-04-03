@@ -1,26 +1,26 @@
-                      html, body, .container {
-                          min-height: 100%;
-                          text-align: center;
-                      }
+ html, body, .container {
+     min-height: 100%;
+     text-align: center;
+ }
 
 body {
     background: linear-gradient(#f0f0f0, #a9a9a9);
-
 }
 
 td {
-    width: 50px;
-    padding: 5px;
+    width: 3vw;
+    padding: 0.3vw;
 }
 
 table {
-    margin: -250px auto 0;
+    margin: 8vw auto 0 auto;
     z-index: 2;
 }
 
 table h2 {
     margin: 0;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .container {
@@ -33,13 +33,13 @@ table h2 {
 
 .el_number {
     text-align: left;
-    font-size: 14px;
+    font-size: 1vw;
     margin: 0;
 }
 
 .el_weight {
     text-align: right;
-    font-size: 12px;
+    font-size: 0.8vw;
     margin: 0;
 }
 
@@ -85,4 +85,12 @@ table h2 {
 
 .silver {
     background-color: #C8C8C8;
+}
+
+.container img {
+    width: 20vw;
+    position: absolute;
+    margin: 0 auto;
+    left: 39%;
+    display: block;
 }

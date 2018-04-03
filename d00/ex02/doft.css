@@ -4,14 +4,15 @@ html, body {
 }
 
 header {
-    margin: 16px auto;
+    margin: 17px auto;
     max-width: 1420px;
     position: relative;
+    left: 1px;
 }
 
 #loupe {
     max-height: 300px;
-    right: 29px;
+    right: 30px;
     bottom: -28px;
     position: absolute;
 }
@@ -36,15 +37,19 @@ header {
 }
 
 #img_eye {
-    margin: -5px 0 1px -5px;
+    height: 65px;
+    margin: 0px 0 -4px -7px;
     border: 5px solid red;
     border-radius: 5px;
 }
 
-#funny_block {
-    height: 170px;
-    width: 520px;
-    padding: 10px;
+
+#text_entrez {
+    font-size: 31px;
+    font-family: sans-serif;;
+    padding: 0 -18px;
+    margin: 0px 2px 0 -3px;
+    letter-spacing: 1.5px;
 }
 
 .round {
@@ -72,14 +77,15 @@ header {
 }
 
 .left_panel {
-    width: 140px;
-    height: 425px;
+    width: 120px;
+    height: 405px;
     padding: 10px;
+    margin-left: 31px;
 }
 
 .right_panel {
-    width: 140px;
-    height: 425px;
+    width: 120px;
+    height: 405px;
     padding: 10px;
 }
 
@@ -88,13 +94,22 @@ header {
     display: inline-block;
     margin: 0 30px;
     padding: 10px;
-    height: 582px;
-    width: 1020px;
+    height: 562px;
+    width: 1000px;
+}
+
+.right a {
+    display: block;
+}
+
+.central_panel img {
+    height: 562px;
+
 }
 
 .left_panel img {
+    margin: 5px 0px 1px -7px;
     width: 70px;
-    height: 70px;
 }
 .site_name img{
     max-height: 110px;
@@ -104,7 +119,8 @@ header {
 
 .right_panel img {
     width: 70px;
-    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 1px;
 }
 
 .left {
@@ -119,11 +135,14 @@ header {
 .strange_form {
     width: 500px;
     height: 150px;
-    top: 650px;
+    top: 680px;
     position: absolute;
     padding: 10px;
+    margin-left: -44px;
     font: 16px arial, serif;
     background-color: #88ff89;
+    text-align: left;
+    letter-spacing: 1.5px;
 }
 
 .text_field{
@@ -131,15 +150,21 @@ header {
     height: 15px;
     margin: 0 0 0 2px;
     border: 2px solid #9d969d;
+    border-bottom-color: #f0f0f0;
+    border-right-color: #f0f0f0;
+}
 
+.text_shadow {
+    text-shadow: 5px 5px 5px red;
 }
 
 .btn_submit {
     height: 22px;
-    margin: 0 0 0 4px;
+    margin: 0 0 0 3px;
     font-size: 12px;
     letter-spacing: 1px;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
     border: 1px solid #a8a4a5;
     border-radius: 1px;
 }
+
