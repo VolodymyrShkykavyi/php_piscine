@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
 function ft_split($str) {
-	$arr = explode(" ", trim(preg_replace('/( +)/',' ', $str), " "));
-	return(array_filter($arr));
+	$arr = explode(" ", trim(preg_replace('/(\s+)/',' ', $str)));
+	return(array_diff($arr, array()));
 }
 
 $result = array();
