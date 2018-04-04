@@ -2,11 +2,11 @@
 <?php
 if ($argc < 3)
 	exit(0);
-$key = $argv[1];
+$pattern = $argv[1];
+$pattern = "/" . $pattern . ":/";
 foreach (array_reverse(array_slice($argv, 2)) as $value){
-	$tmp = explode(':', $value);
-	if ($tmp[0] === $key){
-		echo $tmp[1] . "\n";
-		break;
-	}
+    if (preg_match($pattern, $value)){
+        echo substr($value, strlen($pattern) - 2) . "\n";
+        break;
+    }
 }
