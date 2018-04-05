@@ -13,4 +13,4 @@ function all_toupper($matches) {
 
 $file = file_get_contents($argv[1]);
 $file = preg_replace_callback('#<a[ |>][\s\S]*?<\/a>#', 'all_toupper', $file);
-print_r($file);
+echo ($file);
