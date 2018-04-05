@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-date_default_timezone_set('Europe/Paris');
+date_default_timezone_set('Europe/Kiev');
 $utmpx = fopen("/var/run/utmpx", 'r');
 $curr_usr = get_current_user();
 while (($data = fread($utmpx, 628))) {
