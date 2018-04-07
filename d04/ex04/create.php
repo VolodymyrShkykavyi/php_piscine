@@ -1,0 +1,42 @@
+<?php
+
+if (!$_POST['login'] || !$_POST['passwd'] || $_POST['submit'] != "OK"){
+	echo "ERROR\n";
+}
+else{
+	$fd = 0;
+	if (!file_exists("../private")){
+		mkdir("../private", 0777);
+	}
+	if (file_exists("../private/passwd")){
+		$fd = fopen("../private/passwd", "r");
+		flock($fd, LOCK_EX);
+		$all_users = unserialize(file_get_contents("../private/passwd"));
+	}
+	else{
+		$all_users = [];
+	}
+	foreach ($all_users as $user){
+		if ($user['login'] === $_POST['login']){
+			if ($fd) {
+				flock($fd, LOCK_UN);
+				fclose($fd);
+			}
+			echo "ERROR\n";
+			return;
+		}
+	}
+	$user = [
+		'login' => $_POST['login'],
+		'passwd' => hash('sha256', $_POST['passwd'])
+	];
+	$all_users[] = $user;
+	$serialized = serialize($all_users);
+	file_put_contents("../private/passwd", $serialized);
+	if ($fd){
+		flock($fd, LOCK_UN);
+		fclose($fd);
+	}
+	echo "OK\n";
+	header('Location: index.html');
+}
