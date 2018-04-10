@@ -1,4 +1,4 @@
-CREATE TABLE `db_vshkykav`.`ft_table` (
+CREATE TABLE `ft_table` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `login` VARCHAR(8) NOT NULL DEFAULT 'toto',
   `group` ENUM('staff', 'student', 'other') NOT NULL,
