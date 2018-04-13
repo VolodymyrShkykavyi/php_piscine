@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon</title>
+</head>
+<body>
+    <div id="balloon" style="width: 200px; height: 200px; background-color: red; border-radius: 50%; margin: auto;"
+         onclick="change_balloon(10, 1)" onmouseout="change_balloon(-5, -1)">
+    </div>
+<script>
+    var colors = ['red', 'green', 'blue'];
+    var balloon = document.getElementById('balloon');
+
+
+    function change_balloon(change_size, change_color) {
+        var new_color = (colors.indexOf(balloon.style.backgroundColor) + colors.length + change_color) % colors.length;
+        balloon.style.backgroundColor = colors[new_color];
+        balloon.style.width = (parseInt(balloon.style.width) + change_size) + "px";
+        balloon.style.height = (parseInt(balloon.style.height) + change_size) + "px";
+        if (parseInt(balloon.style.width) > 420 || parseInt(balloon.style.width) < 200){
+            balloon.style.width = "200px";
+            balloon.style.height = "200px";
+        }
+    }
+</script>
+</body>
+</html>

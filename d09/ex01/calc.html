@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <input type="text" id="operand1">
+    <select id="operation">
+        <option selected  value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="operand2">
+    <input type="submit" value="Try me!" onclick="calculate()">
+
+<script>
+    setInterval(function () {
+        alert("Please, use me...");
+    }, 30000);
+
+    function isNumeric(str) {
+        return /^[+]?\d+$/.test(str);
+    }
+
+    function calculate() {
+        var op1 = document.getElementById('operand1');
+        var op2 = document.getElementById('operand2');
+        var operation = document.getElementById('operation');
+        var result = 0;
+        if (!isNumeric(op1.value) || !isNumeric(op2.value)){
+            alert("Error :(");
+        return false;
+        }
+        op1 = parseInt(op1.value);
+        op2 = parseInt(op2.value);
+
+        eval('result = ' + op1 + operation.value + op2 + ';')
+        if (!isFinite(result)){
+            console.log("It’s over 9000!");
+            alert("It’s over 9000!");
+        }
+        else {
+            console.log(result);
+            alert(result);
+        }
+    }
+</script>
+</body>
+</html>
